@@ -6,9 +6,12 @@ public class Main {
         System.out.println("Hello world! Working with Linked lists");
 
         LinkedList linkedList = new LinkedList(4);
+        linkedList.append(5);
+        linkedList.append(100);
         linkedList.getHead();
         linkedList.getTail();
         linkedList.getLength();
         linkedList.printList();
+
     }
 }

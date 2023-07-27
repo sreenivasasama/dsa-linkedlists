@@ -24,10 +24,24 @@ public class LinkedList {
     public void printList() {
         Node temp = this.head;
         while(temp!=null){
-            System.out.println(temp.value);
+            System.out.print(temp.value);
             temp = temp.next;
+            System.out.print("-->");
         }
+        System.out.print("null");
 
+    }
+
+    public void append(int value){
+        Node newNode = new Node(value);
+        if(length == 0 ) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
     }
 
     public void getHead() {
