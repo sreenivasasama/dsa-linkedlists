@@ -13,5 +13,9 @@ public class Main {
         linkedList.getLength();
         linkedList.printList();
 
+        if(linkedList.getLength() > 1) {
+            System.out.println("remove last node and the removed node is " + linkedList.removeLastNode().value);
+            linkedList.printList();
+        }
     }
 }
